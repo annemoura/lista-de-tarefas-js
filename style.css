@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+   width: 100%;
+    max-width: 500px;
+    background: #fff;   
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+h1
+{
+   text-align: center;
+    color: #111827;
+    margin-bottom: 20px;
+}
+input{
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+button{
+    padding: 12px 16px;
+    border: none;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+button:hover{
+    opacity: 0.9;
+}
+
+#taskList{
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#taskList li{
+   background: #f9fafb;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #111827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#taskList li button{
+    background: #ef4444;
+    padding: 8px 12px;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#taskList li button:hover{
+    opacity: 0.9;
+}
+.completed{
+    text-decoration: line-through;
+    color: #9ca3af;
+}
